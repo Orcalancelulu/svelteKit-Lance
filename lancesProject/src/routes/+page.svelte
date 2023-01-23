@@ -1,2 +1,34 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script context="module">
+    export async function load({ fetch }) {
+      
+      if (true) {
+        return {
+          props: {
+            guides: {
+                ob1: {
+                    title: "huhu"
+                },
+                ob2: {
+                    title: "hehe"
+                }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script>
+    export let guides
+  </script>
+  
+  <div class="guides">
+    <ul>
+      {#each guides as guide}
+        <li>
+          <a href='/'>{guide.title}</a>
+        </li>
+      {/each}
+    </ul>
+  </div>
+  
