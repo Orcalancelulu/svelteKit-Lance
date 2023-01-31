@@ -10,7 +10,7 @@
         <a href="/" class="titleItem">Home</a>
         <a href="/cats" class="titleItem">Cats</a>
         <a>platzhalter (geht sicher schöner)</a>
-        <a class="titleItem">Notes</a>
+        <a href="/notes" class="titleItem">Notes</a>
         <a href="/bad_jokes" class="titleItem">Jokes</a>
     </div>
     

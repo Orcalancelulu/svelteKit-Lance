@@ -11,7 +11,6 @@ export async function load({ fetch }) {
     let jokeObj = await res.json()
 
     let joke = jokeObj.body[0];
-    console.log(joke);
 
     return {
         jokes: {
