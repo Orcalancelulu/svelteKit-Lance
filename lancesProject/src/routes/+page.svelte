@@ -1,34 +1,21 @@
-<script context="module">
-    export async function load({ fetch }) {
-      
-      if (true) {
-        return {
-          props: {
-            guides: {
-                ob1: {
-                    title: "huhu"
-                },
-                ob2: {
-                    title: "hehe"
-                }
-            }
-          }
-        }
-      }
+<script>
+    console.log("huhu")
+</script>
+
+
+<div>
+    <h1>Hello!</h1>
+    <p>this Website is there to motivate you, feel free to click around</p>
+</div>
+
+<style>
+    div {
+        font-family: Snell Roundhand, cursive;
+        font-size: 30px;
+        margin: 200px 20px 20px 20px;
+
+        
     }
-  </script>
-  
-  <script>
-    export let guides
-  </script>
-  
-  <div class="guides">
-    <ul>
-      {#each guides as guide}
-        <li>
-          <a href='/'>{guide.title}</a>
-        </li>
-      {/each}
-    </ul>
-  </div>
-  
+
+    
+</style>
